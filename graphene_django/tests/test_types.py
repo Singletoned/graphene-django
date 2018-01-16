@@ -118,9 +118,9 @@ type PageInfo {
 }
 
 type Reporter {
-  id: ID!
-  firstName: String!
-  lastName: String!
+  id: ID
+  firstName: String
+  lastName: String
   email: String!
   pets: [Reporter]
   aChoice: ReporterAChoice!

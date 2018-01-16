@@ -24,8 +24,8 @@ class Film(models.Model):
 
 
 class Reporter(models.Model):
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
+    first_name = models.CharField(max_length=30, blank=True)
+    last_name = models.CharField(max_length=30, blank=True)
     email = models.EmailField()
     pets = models.ManyToManyField('self')
     a_choice = models.CharField(max_length=30, choices=CHOICES)
